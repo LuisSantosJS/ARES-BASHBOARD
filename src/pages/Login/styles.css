@@ -1,0 +1,37 @@
+.backgroundContainerViewLogin{
+    display: flex;
+    background-image: url('../../assets/bg.png');
+    background-size: cover;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width:100vw;
+    min-Height: 100vh;
+}
+
+.viewsinputsssLogin{
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    height: 50%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.submitLoginScreen{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+    max-width: 300px;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    height: 40px;
+    background-color: #2d6fae;
+}
+.submitLoginScreen:hover{
+    background-color: #00a8e1;
+    cursor: pointer;
+}

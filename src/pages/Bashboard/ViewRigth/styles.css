@@ -1,0 +1,93 @@
+.containerListviewReq{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100vh;
+    max-height: auto;
+
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 166px;
+
+}
+
+.bodycontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 370px;
+    width: 100%;
+}
+
+.textHolder{
+    color: #707070;
+    text-align: center;
+    opacity: 0.3;
+}
+
+.divrowhr{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 20px;
+    color:#7dc6ef;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gradeline{
+    width: 30%;
+    height: 2px;
+    background-color: #e5e5e5;
+}
+
+.collatendimetoucliente{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 98%;
+    height: 140px;
+}
+.itematendimento{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30%;
+    height: 70%;
+    
+
+}
+
+.nameitemtext2{
+    color: #707070;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nameitemtextsub2{
+    color: #707070;
+    font-size: 12px;
+}
+
+.spannbuttonitematendimento{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 20px;
+    border-radius: 10px;
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+
+}
