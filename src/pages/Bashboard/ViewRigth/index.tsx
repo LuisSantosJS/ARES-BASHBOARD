@@ -21,7 +21,7 @@ const ViewRigth: React.FC<Props> = (props) => {
                         <h1 style={{ fontWeight: 'bold', color: '#707070' }}>ANDRÉ MACHADO</h1>
                         <h3 style={{ color: '#707070' }}>11 99999-9999</h3>
                         <h4 style={{ color: '#707070' }}>Macedo's Teams</h4>
-                        <span style={{ background: '#00be00', width: '20%' }} className='spannbuttonitematendimento'>ESPONTÂNEO</span>
+                        <span style={{ background: '#00be00', width: '10%' }} className='spannbuttonitematendimento'>ESPONTÂNEO</span>
                         <br />
                         <div style={{ width: '60%' }} className='gradeline'></div>
                         <h4 style={{color: '#00adf0'}}>Por Favor dirija-se á recepção</h4>

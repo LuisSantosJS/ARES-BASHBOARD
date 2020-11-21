@@ -3,8 +3,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    min-height: 100vh;
-    max-height: auto;
+    height: 100vh - (80px);
 
 }
 
