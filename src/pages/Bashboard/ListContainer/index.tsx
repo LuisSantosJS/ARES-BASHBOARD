@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles.css';
 import { useIsOn } from '../../../context/main'
+import { useWindowDimensions } from '../../../hooks/useDimension'
 interface Props {
     width: number;
 }
@@ -27,15 +28,11 @@ const DATA: List[] = [
         name: 'Felipe',
         sub: 'Felipe Team'
     },
-    {
-        name: 'Josefina',
-        sub: 'Josefina Team'
-    }
-
 
 ]
 const ListContainer: React.FC<Props> = (props) => {
     const { isOn } = useIsOn();
+    const { height } = useWindowDimensions()
 
     const isON = (index: number) => {
         if (!isOn) {
@@ -70,7 +67,7 @@ const ListContainer: React.FC<Props> = (props) => {
 
     return (
         <>
-            <div style={{ width: props.width }} className='containerListview'>
+            <div style={{ width: props.width, height: height - 80 }} className='containerListview'>
                 <br />
                 <div className='divsearchandname'>{//SEARCH
                 }
@@ -82,6 +79,7 @@ const ListContainer: React.FC<Props> = (props) => {
                 </div>
                 <br />
                 <div className='containerlIStss'>
+                    <br />
                     {DATA.map((res, index) => {
                         return (
                             <React.Fragment key={index}>

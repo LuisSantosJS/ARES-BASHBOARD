@@ -1,14 +1,16 @@
 import React from 'react';
 import './styles.css';
+import { useWindowDimensions } from '../../../hooks/useDimension'
 import { useIsOn } from '../../../context/main'
 interface Props {
     width: number;
 }
 const ViewRigth: React.FC<Props> = (props) => {
     const { isOn, setIsOn } = useIsOn();
+    const { height } = useWindowDimensions()
     return (
         <>
-            <div style={{ width: props.width }} className='containerListviewReq'>
+            <div style={{ width: props.width, height: height - 80 }} className='containerListviewReq'>
                 {isOn ?
                     <div onClick={() => setIsOn(!isOn)} style={{ width: props.width }} className='bodycontainer'>
                         <h1 className='textHolder'>"POR FAVOR AGUARDAM A CHAMADA"</h1>
@@ -24,7 +26,7 @@ const ViewRigth: React.FC<Props> = (props) => {
                         <span style={{ background: '#00be00', width: '10%' }} className='spannbuttonitematendimento'>ESPONTÂNEO</span>
                         <br />
                         <div style={{ width: '60%' }} className='gradeline'></div>
-                        <h4 style={{color: '#00adf0'}}>Por Favor dirija-se á recepção</h4>
+                        <h4 style={{ color: '#00adf0' }}>Por Favor dirija-se á recepção</h4>
                     </div>
                 }
                 <div className='rodape'>
